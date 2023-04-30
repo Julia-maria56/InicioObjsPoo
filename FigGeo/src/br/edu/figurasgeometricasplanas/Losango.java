@@ -1,9 +1,12 @@
 package br.edu.figurasgeometricasplanas;
+import java.util.Scanner;
 
 public class Losango {
-	public double dmaior;
-	public double dmenor;
-	public double area;
+	
+	Scanner sc = new Scanner (System.in);
+	private double dmaior;
+	private double dmenor;
+	private double area;
 	
 	public Losango() {
 		dmaior = 0.0;
@@ -13,7 +16,7 @@ public class Losango {
 	
 	public void CalcArea() {
 		area = (dmaior * dmenor) / 2;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e sem par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e sem par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	 
@@ -21,19 +24,24 @@ public class Losango {
 		area = (dmaior * dmenor) / 2;
 		dmaior = Dmaior;
 		dmenor = d;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e com par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e com par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	
 	public void ListaAtributos() {
-		System.out.println("O valor de todos as diagonais maiores È: " + dmaior);
-		System.out.println("O valor de todos as diagonais menores È: " + dmenor);
-		System.out.println("O valor de todas as ·reas È: " +area);
+		System.out.println("Digite o valor da diagonal maior : " );
+		dmaior = sc.nextDouble();
+		System.out.println("Digite o valor da diagonal menor : " );
+		dmenor = sc.nextDouble();
 	  
 	}
+	public double getArea() {
+		return area;
+	}
 	
+	public double getVolume() {
+		return area;
+	}
 
 }
-
-
 

@@ -1,9 +1,13 @@
 package br.edu.figurasgeometricasplanas;
+import java.util.Scanner;
 
 public class Triangulo {
-	public double area;
-	public double base;
-	public double altura;
+	
+	Scanner sc = new Scanner (System.in);
+	
+	private double area;
+	private double base;
+	private double altura;
 	
 	public Triangulo() {
 		base = 0.0;
@@ -14,7 +18,7 @@ public class Triangulo {
 	
 	public void CalcArea() {
 		area = (base * altura) / 2;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e sem par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e sem par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	 
@@ -23,17 +27,18 @@ public class Triangulo {
 		base = b;
 		altura  = h;
 		System.out.println(" ");
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e com par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e com par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	
 	public void ListaAtributos() {
-		System.out.println("O valor de todas as ·reas È: " +area);
-		System.out.println("O valor de todas as bases È: " +base);
-		System.out.println("O valor de todas as altura È: " +altura);
-	}
+		System.out.println("Digite o valor da base: ");
+		base = sc.nextDouble();
+		System.out.println("Digite o valor da altura: ");
+		altura = sc.nextDouble();	
+		}
 	
+	public double getArea() {
+		return area;
+	}
 }
-
-
-

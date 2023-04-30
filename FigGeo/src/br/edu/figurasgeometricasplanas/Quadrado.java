@@ -1,37 +1,37 @@
 package br.edu.figurasgeometricasplanas;
+import java.util.Scanner;
 
 public class Quadrado {
-	public double lado1;
-	public double lado2;
-	public double area;
+	
+	Scanner sc = new Scanner (System.in);
+	
+	private double lado1;
+	private double area;
 	
 	public Quadrado() {
 		lado1 = 0.0;
-		lado2 = 0.0;
 		area = 0.0;
 	}
 	
 	public void CalcArea() {
-		area = (lado1 * lado2);
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e sem par‚metro È: " + area);
+		area = (lado1 * lado1);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e sem par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	 
-	public void CalcArea(double l1, double l2) {
-		area = (lado1 * lado2);	
+	public void CalcArea(double l1) {
+		area = (lado1 * lado1);	
 		lado1 = l1;
-		lado2 = l2;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e com par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e com par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	
 	public void ListaAtributos() {
-		System.out.println("O valor de todas s lados È: " + lado1);
-		System.out.println("O valor de todas as ·reas È: " +area);
-	  
+		System.out.println("Digite o valor do lado: ");	  
+	}
+	public double getArea() {
+		return area;
 	}
 	
-
 }
-
 

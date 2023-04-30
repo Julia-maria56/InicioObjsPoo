@@ -1,14 +1,17 @@
 package br.edu.figurasgeometricasplanas;
+import java.util.Scanner;
 
 public class Trapezio {
-	public double bmaior;
-	public double bmenor;
-	public double area;
-	public double altura;
+	
+	Scanner sc = new Scanner (System.in);
+	private double bmaior;
+	private double bmenor;
+	private double area;
+	private double altura;
 	
 	public void CalcArea() {
 		area = ((bmaior + bmenor)*altura) / 2;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e sem par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e sem par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	 
@@ -17,23 +20,21 @@ public class Trapezio {
 		bmaior = B;
 		bmenor = b;
 		altura = a;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e com par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e com par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	
 	public void ListaAtributos() {
-		System.out.println("O valor de todos as bases maiores È: " + bmaior);
-		System.out.println("O valor de todos as bases menores È: " + bmenor);
-		System.out.println("O valor de todos as alturas È: " + altura);
-		System.out.println("O valor de todas as ·reas È: " +area);
-	  
+		System.out.println("Digite o valor da base maior: ");
+		bmaior = sc.nextDouble();
+		System.out.println("Digite o valor da base menor: ");
+		bmenor = sc.nextDouble();
+		System.out.println("Digite o valor da altura: ");
+		altura = sc.nextDouble();  
+	}
+	public double getArea() {
+		return area;
 	}
 	
 
 }
-
-
-
-
-
-

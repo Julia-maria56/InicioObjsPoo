@@ -1,9 +1,12 @@
 package br.edu.figurasgeometricasplanas;
+import java.util.Scanner;
 
 public class Retangulo {
-	public double base;
-	public double altura;
-	public double area;
+	
+	Scanner sc = new Scanner (System.in);
+	private double base;
+	private double altura;
+	private double area;
 	
 	public Retangulo() {
 		base = 0.0;
@@ -13,7 +16,7 @@ public class Retangulo {
 	
 	public void CalcArea() {
 		area = (base * altura);
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e sem par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e sem par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	 
@@ -21,17 +24,20 @@ public class Retangulo {
 		area = (base * altura);	
 		base = b;
 		altura = h;
-		System.out.println("O valor da ·rea È, em um mÈtodo sem retorno e com par‚metro È: " + area);
+		System.out.println("O valor da √°rea √©, em um m√©todo sem retorno e com par√¢metro √©: " + area);
 		System.out.println(" ");
 	}
 	
 	public void ListaAtributos() {
-		System.out.println("O valor de todas as bases È: " + base);
-		System.out.println("O valor de todas as bases È: " + altura);
-		System.out.println("O valor de todas as ·reas È: " +area);
-	  
+		System.out.println("Digite o valor da base: ");
+		base = sc.nextDouble();
+		System.out.println("Digite o valor da altura: ");
+		altura = sc.nextDouble(); 
 	}
 	
-
+	public double getArea() {
+		return area;
+	}
+	
 }
 
