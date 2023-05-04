@@ -55,5 +55,19 @@ Reservatório destinado aos códigos relacionados ao início da aprendizagem de 
 <img alt="Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"> 
 <img alt="Java" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"> 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+![Diagrama POO 28_04 (1)](https://user-images.githubusercontent.com/125198189/236236590-a6f9a80c-101f-4834-97c0-c41ee287b573.png)
+
+
+
+
+
+![Fluxograma](https://user-images.githubusercontent.com/125198189/236236656-82fb5f3d-5f70-4f23-bfa2-e685a1695dd2.png)
+
+
 
  
